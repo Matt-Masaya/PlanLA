@@ -17,7 +17,10 @@ export default class Home extends Component {
           onPress={() => navigate('Login')}
         />
         <Text>Welcome to PlanLA</Text>
-        <Create />
+        <Button
+          title="Create Account"
+          onPress={() => navigate('Create')}
+        />
       </View>
     );
   }

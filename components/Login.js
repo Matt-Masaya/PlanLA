@@ -9,10 +9,9 @@ import {
 } from 'react-native';
 
 export default class Login extends Component {
-
   render() {
     return (
-      <ScrollView style={{padding: 20}}>
+      <ScrollView style={styles.container}>
         <Text 
           style={{fontSize: 27}}>
           Login
@@ -33,7 +32,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#00838F',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
