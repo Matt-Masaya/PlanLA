@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  StyleSheet,
   ScrollView,
   Text,
   TextInput,
@@ -27,3 +28,12 @@ export default class Login extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#00838F',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

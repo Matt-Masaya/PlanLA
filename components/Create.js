@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  StyleSheet,
   ScrollView,
   Text,
   TextInput,
@@ -8,18 +9,13 @@ import {
 } from 'react-native';
 
 export default class Create extends Component {
-
   render() {
     return (
       <ScrollView style={{padding: 20}}>
-        <Text 
-          style={{fontSize: 27}}>
-          Login
-        </Text>
         <View style={{margin:7}} />
         <Button 
           onPress={this.props.onLoginPress}
-          title="Submit"
+          title="Create Account"
         />
       </ScrollView>
     )

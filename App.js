@@ -1,24 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Create from './components/Create';
+import { StackNavigator } from 'react-navigation';
+import Home from './components/Home';
+import Login from './components/Login';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Log in</Text>
-        <Text>Welcome to PlanLA</Text>
-        <Create />
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#00838F',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const App = StackNavigator({
+  Home: { screen: Home },
+  Login: {screen: Login },
 });
+
+export default App;
